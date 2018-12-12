@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+ <html lang="en" >
+ <head>
+   <meta charset="UTF-8">
+   <title>Home</title>  
+     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css" />
+     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+     <link rel = "stylesheet" type = "text/css" href = "/stylesheets/main.css" />  
+ </head>
+ <body>
+     <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+         <a class="navbar-brand" style="font-size:1.5em" href="/">Title</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+       
+         <div class="collapse navbar-collapse" id="navbarColor03">
+           <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+               <a class="btn btn-lg btn-light ml-2" href="/">Home <span class="sr-only">(current)</span></a>
+             <li class="nav-item">
+               <a class="btn btn-lg btn-light " href="#">About</a>
+             </li>
+           </ul>
+           <% if(!currentUser) { %>
+           <div class="btn-group" role="group" aria-label="Basic example">
+               <a class="btn btn-lg btn-secondary" href="/login">Login</a>
+               <a class="btn btn-lg btn-secondary" href="/register">Register</a>
+               <% } else { %>   
+                <a class="btn btn-lg btn-secondary" href="/logout">Log Out</a> 
+                <% } %> 
+             </div>
+           
+         </div>
+       </nav>
+   
+    <header class="showcase">
+     <div class="content">
+       <img src="https://image.ibb.co/ims4Ep/logo.png" class="logo" alt="Traversy Media">
+       <div class="title">
+         Welcome To Traversy Media
+       </div>
+       <div class="text">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, vel.
+       </div>
+     </div>
+   </header>
+ 
+   <!-- Services -->
+   <section class="services">
+     <div class="container grid-3 center">
+       <div>
+         <i class="fab fa-youtube fa-3x"></i>
+         <h3>YouTube</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!</p>
+       </div>
+       <div>
+         <i class="fas fa-chalkboard-teacher fa-3x"></i>
+         <h3>Courses</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!</p>
+       </div>
+       <div>
+         <i class="fas fa-briefcase fa-3x"></i>
+         <h3>Freelancing Projects</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!</p>
+       </div>
+     </div>
+   </section>
+ 
+   <!-- About -->
+   <section class="about bg-primary">
+     <div class="container">
+       <div class="grid-2">
+         <div class="center">
+           <i class="fas fa-laptop-code fa-10x"></i>
+         </div>
+         <div>
+           <h3>About Us</h3>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non eos aperiam labore consectetur maiores ea magni exercitationem
+             similique laborum sed, unde, autem vel iure doloribus aliquid. Aspernatur explicabo consectetur consequatur non
+             nesciunt debitis quos alias soluta, ratione, ipsa officia reiciendis.</p>
+         </div>
+       </div>
+     </div>
+   </section>
+ 
+   <footer class="center bg-light">
+     <p style="color:aliceblue">Traversy Media &copy; 2018</p>
+   </footer>
+   
+   
+ 
+ </body>
+ 
+ </html>
+ 
+ 
